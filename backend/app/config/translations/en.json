@@ -1,0 +1,162 @@
+{
+    "auth": {
+        "invalid_credentials": "Invalid credentials",
+        "unauthenticated": "Unauthenticated",
+        "password_reset_email_sent": "A password reset email has been sent",
+        "password_reset_subject": "Reset Password",
+        "password_reset_email_body_greeting": "Hello",
+        "password_reset_email_body_message": "You are receiving this email because you (or someone else) have requested a password reset for your account.",
+        "password_reset_email_body_action": "This password reset link will expire in 15 minutes.",
+        "password_reset_email_body_link": "Click here to reset your password: ",
+        "password_reset_email_body_farewell": "Regards, the team of",
+        "password_reset_success": "Password reset successfully",
+        "user_not_found": "User not found",
+        "email_already_registered": "The email is already registered",
+        "password_updated": "Password updated successfully",
+        "invalid_password": "Invalid password",
+        "profile_updated": "Profile updated successfully",
+        "password_reset_email_body_link_text": "Change Password"
+    },
+    "common": {
+        "data_processing": "Data is being processed",
+        "email_data_processing": "Data is being processed. You will receive an email when it is ready.",
+        "data_processiong_message": "Completed {completed}/{total}",
+        "export_mail_subject": "Data export",
+        "export_mail_body_greeting": "Hello",
+        "export_mail_body_message": "The data has been exported successfully",
+        "export_mail_body_action": "We have attached the exported data for your review",
+        "export_mail_body_farewell": "Regards, the team of",
+        "errors_mail_subject": "Error importing data",
+        "errors_mail_body_greeting": "Hello",
+        "errors_mail_body_message": "Errors have been found while importing the data",
+        "errors_mail_body_action": "We have attached the file with the errors",
+        "errors_mail_body_farewell": "Regards, the team of",
+        "error_importing_data": "Error importing data"
+    },
+    "errors": {
+        "internal_server_error": "Internal server error",
+        "not_found": "Record not found",
+        "unauthorized": "Unauthorized",
+        "forbidden": "Access denied",
+        "bad_request": "Bad request",
+        "invalid_float_check_precision": "exactly one of precision_digits and precision_rounding must be specified",
+        "precision_rounding_must_be_positive": "precision_rounding must be positive, got {precision_rounding}",
+        "email_not_sent": "Email not sent",
+        "unsupported_file_type": "Unsupported file type",
+        "file_not_found": "File {file} not found",
+        "file_processing_error": "Error processing file: {error}",
+        "invalid_file": "The file {file} is not valid",
+        "file_too_large": "The file {file} is too large",
+        "file_too_large_message": "The file {file} cannot be larger than {max_size_mb} MB",
+        "missing_company_id_header": "The company is required"
+    },
+    "date_formatter": {
+        "months": {
+            "January": "january",
+            "February": "february",
+            "March": "march",
+            "April": "april",
+            "May": "may",
+            "June": "june",
+            "July": "july",
+            "August": "august",
+            "September": "september",
+            "October": "october",
+            "November": "november",
+            "December": "december",
+            "short": {
+                "Jan": "Jan",
+                "Feb": "Feb",
+                "Mar": "Mar",
+                "Apr": "Apr",
+                "May": "May",
+                "Jun": "Jun",
+                "Jul": "Jul",
+                "Aug": "Aug",
+                "Sep": "Sep",
+                "Oct": "Oct",
+                "Nov": "Nov",
+                "Dec": "Dec"
+            }
+        }
+    },
+    "validation": {
+        "required_field": "The {field} field is required",
+        "unique": "The {field} already exists",
+        "invalid_email": "The email is not valid",
+        "invalid_username": "The username {username} is not valid",
+        "password_too_short": "Password must be at least {min_length} characters long",
+        "password_too_long": "Password cannot be longer than {max_length} characters",
+        "invalid_password_format": "Password must contain at least one uppercase letter, one lowercase letter, and one number",
+        "field_min_length": "The {field} must be at least {min_length} characters long",
+        "field_max_length": "The {field} cannot be longer than {max_length} characters",
+        "field_must_be_numeric": "The {field} must be numeric",
+        "field_must_be_alpha": "The {field} must contain only letters",
+        "field_must_be_alphanumeric": "The {field} must contain only letters and numbers",
+        "missing": "The {field} field is required",
+        "field_must_be_valid": "The {field} field is not valid",
+        "value_error": {
+            "email": "The email is not valid",
+            "any_str": {
+                "min_length": "The {field} must be at least {limit_value} characters long",
+                "max_length": "The {field} cannot be longer than {limit_value} characters"
+            },
+            "number": {
+                "not_gt": "The {field} must be greater than {limit_value}",
+                "not_lt": "The {field} must be less than {limit_value}",
+                "not_ge": "The {field} must be greater than or equal to {limit_value}",
+                "not_le": "The {field} must be less than or equal to {limit_value}"
+            },
+            "str": {
+                "regex": "The {field} format is not valid",
+                "alphanumeric": "The {field} must contain only letters and numbers",
+                "alpha": "The {field} must contain only letters",
+                "numeric": "The {field} must contain only numbers",
+                "unique": "The {field} must be unique"
+            }
+        }
+    },
+    "attributes": {
+        "email": "email",
+        "password": "password",
+        "username": "username",
+        "first_name": "first name",
+        "last_name": "last name",
+        "phone": "phone",
+        "address": "address",
+        "city": "city",
+        "country": "country",
+        "postal_code": "postal code",
+        "role": "role",
+        "status": "status",
+        "name": "name",
+        "surname": "surname",
+        "lang": "language",
+        "new_password": "new password",
+        "limit": "limit",
+        "page": "page",
+        "search": "search",
+        "ids": "ids",
+        "legal_name": "legal name",
+        "trade_name": "trade name",
+        "cif": "cif",
+        "country_id": "country",
+        "province": "province",
+        "web": "web"
+    },
+    "users": {
+        "not_found": "User not found"
+    },
+    "roles": {
+        "not_found": "Role not found",
+        "created": "Role created successfully",
+        "updated": "Role updated successfully",
+        "deleted": "Role deleted successfully"
+    },
+    "companies": {
+        "not_found": "Company not found",
+        "created": "Company created successfully",
+        "updated": "Company updated successfully",
+        "deleted": "Company deleted successfully"
+    }
+}

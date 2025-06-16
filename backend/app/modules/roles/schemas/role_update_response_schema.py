@@ -1,0 +1,6 @@
+from app.modules.common.schemas.base_schema import BaseSchema
+from app.modules.roles.schemas.role_schema import RoleSchema
+
+class RoleUpdateResponseSchema(BaseSchema):
+    role: RoleSchema
+    message: str
