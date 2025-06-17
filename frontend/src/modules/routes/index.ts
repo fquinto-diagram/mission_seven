@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import routerAuth from '../auth/router/auth.login'
-
+import { isAuthenticatedGuard } from '../auth/guards/auth.guard'
 const routes =[
     {
         path: '/',
         component: ()=>import('@/modules/layouts/DefaultLayout.vue'),
+        beforeEnter: isAuthenticatedGuard,
         children: [
             {
                 path: '',

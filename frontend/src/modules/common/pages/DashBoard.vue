@@ -1,3 +1,7 @@
 <template>
-    <h1>Hola</h1>
+    <div class="ml-64">
+        <div>
+            <h1>Texto de Ejemplo</h1>
+        </div>
+    </div>
 </template>
