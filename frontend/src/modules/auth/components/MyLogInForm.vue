@@ -17,8 +17,9 @@
         required
         />
         <MyButton
-        class="text-white mx-auto"
+        class="text-black px-4 mx-auto"
         text="Enviar"
+        style="cursor: pointer;"
         />
     </div>
     <div v-if="error" class="error">

@@ -1,4 +1,4 @@
-import type { LoginCredentials, ResponseToken } from "../interface/validateForm.inteface";
+import type { LoginCredentials, userStore } from "../interface/validateForm.inteface";
 import axios, { AxiosError } from "axios";
 import api from "@/config/api";
 
@@ -8,7 +8,7 @@ export async function useLogin(credentials: LoginCredentials) {
     }
 
     try {
-        const response = await api.post<ResponseToken>('/login', credentials);
+        const response = await api.post<userStore>('/login', credentials);
         
         if (response.data.token) {
             localStorage.setItem('token', response.data.token);

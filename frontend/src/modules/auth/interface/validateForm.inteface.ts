@@ -2,7 +2,7 @@ export interface LoginCredentials{
     email: string
     password: string
 }
-export interface ResponseToken{
+export interface userStore{
     token: string
     user:{
         id: number,

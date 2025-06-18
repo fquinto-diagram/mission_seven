@@ -8,5 +8,5 @@ export interface Button{
 
 export const buttonProps = withDefaults(defineProps<Button>(),{
     text: '',
-    type: 'submit'
+    type: 'submit',
 })
