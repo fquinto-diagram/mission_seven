@@ -3,7 +3,7 @@
         <main class="container mx-auto">
             <MyNavBar />
             <MySideBar />
-            <RouterView />
+            <RouterView  class=""/>
         </main>
     </div>
 </template>
