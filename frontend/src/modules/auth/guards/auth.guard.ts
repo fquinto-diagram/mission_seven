@@ -1,11 +1,14 @@
-import type { NavigationGuardNext, RouteLocationNormalized } from 'vue-router'
+import { useCookies } from 'vue3-cookies';
+import type { NavigationGuardNext, RouteLocationNormalized } from 'vue-router';
+
+const { cookies } = useCookies();
 
 export const isAuthenticatedGuard = (
     to: RouteLocationNormalized,
     _from: RouteLocationNormalized,
     next: NavigationGuardNext
 ) => {
-    const token = localStorage.getItem('token')
+    const token = cookies.get('token')
 
     if (token) {
         if (to.path === '/login') {
@@ -14,7 +17,7 @@ export const isAuthenticatedGuard = (
         }
     } else {
         if (to.path !== '/login') {
-            next({name:'login'})
+            next({name:'login-form'})
             return
         }
     }

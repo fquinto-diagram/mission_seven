@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import routerAuth from '../auth/router/auth.login'
-import { isAuthenticatedGuard } from '../auth/guards/auth.guard'
+import routerAuth from '@/modules/auth/router/auth.login'
+import { isAuthenticatedGuard } from '@/modules/auth/guards/auth.guard'
 const routes =[
     {
         path: '/',
@@ -8,7 +8,7 @@ const routes =[
         beforeEnter: isAuthenticatedGuard,
         children: [
             {
-                path: '',
+                path: 'dashboard',
                 name: 'dashboard',
                 component: ()=>import('@/modules/common/pages/DashBoard.vue'),
 
