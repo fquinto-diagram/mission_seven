@@ -7,36 +7,39 @@
             <p class="pr-2">{{ name }}</p>
         </span>
         <div v-if="isMenu" class="bg-gray-100 mr-auto p-2 mt-2 rounded-md absolute justify-items-end">
-            <router-link v-for="route in routes" :to="{ name: route.name}">
-
-            </router-link>
+            <MyButton class="bg-gray-200 hover:gray-200" @click="handleLogout" text="Cerrar Sessión"/>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import { getUser } from '@/modules/auth/helpers/getUser';
+import { useAuthStore } from '@/modules/auth/store/storeCredentials';
+import { useRouter } from 'vue-router';
 import { onMounted, ref } from 'vue';
 import { useCookies } from 'vue3-cookies'
+import MyButton from './MyButton.vue';
 
 const isMenu = ref(false)
 const name = ref('')
+
 const { cookies } = useCookies()
 const token = cookies.get('token')
+
+const store = useAuthStore()
+const router = useRouter()
+
+const handleLogout = () => {
+  store.logOut()
+  router.push({name: 'login-form'})
+}
 
 onMounted(async () => {
   if (!token) return 
 
   const response = await getUser(token)
-  console.log(response)
-
-  name.value = response?.data?.user.name ?? ''
+  
+  name.value = response?.name ?? ''
 })
-
-
-const routes = [
-    {
-        name: 'login'
-    }
-]
+ 
 </script>

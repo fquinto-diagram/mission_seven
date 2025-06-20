@@ -1,6 +1,8 @@
-// src/stores/auth.ts
 import { defineStore } from 'pinia';
+import { useCookies } from 'vue3-cookies'
 import type { Credentials } from '@/modules/auth/interface/credentials.interface';
+
+const {cookies} = useCookies()
 
 export const useAuthStore = defineStore('auth', {
   state: () => ({
@@ -19,6 +21,7 @@ export const useAuthStore = defineStore('auth', {
     logOut() {
       this.credentials = null;
       this.token = '';
+      cookies.remove('token')
       localStorage.removeItem('credentials');
       localStorage.removeItem('token');
     }

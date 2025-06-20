@@ -30,7 +30,6 @@
 <script setup lang="ts">
 import MyButton from '@/modules/common/components/MyButton.vue';
 import MyInput from '@/modules/common/components/MyInput.vue';
-// import { useAuthStore } from '@/modules/auth/store/storeCredentials';
 import { postUser } from '@/modules/auth/helpers/postUser';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';

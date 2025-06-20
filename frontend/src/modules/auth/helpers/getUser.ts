@@ -10,7 +10,7 @@ export async function getUser(token: string) {
                 Authorization: `Bearer ${token}`
             }
         })
-        return response
+        return response.data
     } catch (error) {
         alert(`Hay un error: ${error}`)
     }
