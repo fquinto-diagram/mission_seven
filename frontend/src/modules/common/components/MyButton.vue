@@ -1,5 +1,5 @@
 <template>
-    <button :type="type" @click="$emit('click')" class="text-black rounded-2xl">{{ text }}</button>
+    <button :type="type" @click="$emit('click')" class="text-black">{{ text }}</button>
 </template>
 
 <script setup lang="ts">

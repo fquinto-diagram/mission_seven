@@ -8,7 +8,7 @@ export default {
 
     const handleLogout = async () => {
       await userStore.logOut()
-      router.push({name: 'login'}) // o la ruta que corresponda
+      router.push({name: 'login'})
     }
 
     return {
