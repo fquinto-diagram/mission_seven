@@ -46,7 +46,7 @@ import MyButton from '@/modules/common/components/MyButton.vue';
 import { getUser } from '@/modules/auth/helpers/getUser';
 import { putUser } from '@/modules/auth/helpers/putUser';
 import type { User } from '@/modules/auth/interface/user.interface';
-import { languages } from '@/modules/Profiles/interface/lang.interface';
+import { languages } from '@/modules/Profiles/interfaces/lang.interface';
 
 const isLoaded = ref(false)
 const edit = ref(false)

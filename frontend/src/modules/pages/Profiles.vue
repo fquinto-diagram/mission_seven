@@ -1,6 +1,5 @@
 <template>
     <div class="flex flex-col py-6 ">
-        <h1 class="mx-auto">Edita tu perfil</h1>
         <ProfileForm />
     </div>
 </template>
