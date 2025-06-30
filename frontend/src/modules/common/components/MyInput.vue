@@ -1,5 +1,5 @@
 <template>
-    <input :placeholder="placeholder" :type="type" :required="required" class="rounded-2xl p-2" :value="modelValue" @input="updateValue($event)">
+    <input :placeholder="placeholder" :type="type" :required="required" class="p-2" :value="modelValue" @input="updateValue($event)">
 </template>
 
 <script setup lang="ts">

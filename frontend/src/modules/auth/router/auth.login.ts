@@ -1,4 +1,4 @@
-import { isAuthenticatedGuard } from '../guards/auth.guard'
+import { isAuthenticatedGuard } from '@/modules/auth/guards/auth.guard'
 const routerAuth =[
     {
         path: '/login',
