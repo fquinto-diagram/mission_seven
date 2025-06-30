@@ -1,0 +1,160 @@
+{
+    "auth": {
+        "invalid_credentials": "Credenciales incorrectas",
+        "unauthenticated": "No autenticado",
+        "password_reset_email_sent": "Se ha enviado un correo para restablecer la contraseña",
+        "password_reset_subject": "Restablecer contraseña",
+        "password_reset_email_body_greeting": "Buenos días",
+        "password_reset_email_body_message": "Estás recibiendo este correo electrónico porque has solicitado un restablecimiento de contraseña para tu cuenta.",
+        "password_reset_email_body_action": "Este enlace de restablecimiento de contraseña expirará en 15 minutos.",
+        "password_reset_email_body_link": "Haz clic aquí para restablecer tu contraseña: ",
+        "password_reset_email_body_farewell": "Saludos, el equipo de",
+        "password_reset_success": "Contraseña restablecida correctamente",
+        "user_not_found": "Usuario no encontrado",
+        "email_already_registered": "El correo electrónico ya está registrado",
+        "password_updated": "Contraseña actualizada correctamente",
+        "invalid_password": "La contraseña es incorrecta",
+        "profile_updated": "Perfil actualizado correctamente",
+        "password_reset_email_body_link_text": "Cambiar contraseña"
+    },
+    "common": {
+        "data_processing": "Se está procesando la información",
+        "email_data_processing": "Se está procesando la información. Recibirás un correo electrónico cuando esté listo.",
+        "data_processiong_message": "Completado {completed}/{total}",
+        "export_mail_subject": "Exportación de datos",
+        "export_mail_body_greeting": "Buenos días",
+        "export_mail_body_message": "Se ha exportado correctamente la información",
+        "export_mail_body_action": "Adjuntamos el archivo exportado para tu revisión",
+        "export_mail_body_farewell": "Saludos, el equipo de",
+        "errors_mail_subject": "Error al importar datos",
+        "errors_mail_body_greeting": "Buenos días",
+        "errors_mail_body_message": "Se han encontrado errores al importar los datos",
+        "errors_mail_body_action": "Adjuntamos el archivo con los errores",
+        "errors_mail_body_farewell": "Saludos, el equipo de",
+        "error_importing_data": "Error al importar datos"
+    },
+    "errors": {
+        "internal_server_error": "Error interno del servidor",
+        "unauthorized": "No autorizado",
+        "forbidden": "Acceso denegado",
+        "bad_request": "Solicitud incorrecta",
+        "record_not_found": "Registro no encontrado",
+        "invalid_float_check_precision": "se debe especificar exactamente uno de precision_digits o precision_rounding",
+        "precision_rounding_must_be_positive": "precision_rounding debe ser positivo, se obtuvo {precision_rounding}",
+        "email_not_sent": "No se pudo enviar el correo electrónico",
+        "unsupported_file_type": "Tipo de archivo no soportado",
+        "file_not_found": "El archivo {file} no existe",
+        "file_processing_error": "Error al procesar el archivo: {error}",
+        "invalid_token": "Token inválido",
+        "invalid_file": "El archivo {file} no es válido",
+        "file_too_large": "El archivo {file} no puede ser mayor a {max_size_mb} MB",
+        "missing_company_id_header": "La empresa es obligatoria"
+    },
+    "date_formatter": {
+        "months": {
+            "January": "enero",
+            "February": "febrero",
+            "March": "marzo",
+            "April": "abril",
+            "May": "mayo",
+            "June": "junio",
+            "July": "julio",
+            "August": "agosto",
+            "September": "septiembre",
+            "October": "octubre",
+            "November": "noviembre",
+            "December": "diciembre",
+            "short": {
+                "Jan": "ene",
+                "Feb": "feb",
+                "Mar": "mar",
+                "Apr": "abr",
+                "May": "may",
+                "Jun": "jun",
+                "Jul": "jul",
+                "Aug": "ago",
+                "Sep": "sep",
+                "Oct": "oct",
+                "Nov": "nov",
+                "Dec": "dic"
+            }
+        }
+    },
+    "validation": {
+        "required_field": "El campo {field} es obligatorio",
+        "unique": "El campo {field} ya existe",
+        "invalid_email": "El correo electrónico {email} no es válido",
+        "invalid_username": "El nombre de usuario {username} no es válido",
+        "password_too_short": "La contraseña debe tener al menos {min_length} caracteres",
+        "password_too_long": "La contraseña no puede tener más de {max_length} caracteres",
+        "invalid_password_format": "La contraseña debe contener al menos una letra mayúscula, una minúscula y un número",
+        "field_min_length": "El campo {field} debe tener al menos {min_length} caracteres",
+        "field_max_length": "El campo {field} no puede tener más de {max_length} caracteres",
+        "field_must_be_numeric": "El campo {field} debe ser numérico",
+        "field_must_be_alpha": "El campo {field} debe contener solo letras",
+        "field_must_be_alphanumeric": "El campo {field} debe contener solo letras y números",
+        "missing": "El campo {field} es obligatorio",
+        "field_must_be_valid": "El campo {field} no es válido",
+        "value_error": {
+            "email": "El correo electrónico no es válido",
+            "any_str": {
+                "min_length": "El campo {field} debe tener al menos {limit_value} caracteres",
+                "max_length": "El campo {field} no puede tener más de {limit_value} caracteres"
+            },
+            "number": {
+                "not_gt": "El campo {field} debe ser mayor que {limit_value}",
+                "not_lt": "El campo {field} debe ser menor que {limit_value}",
+                "not_ge": "El campo {field} debe ser mayor o igual que {limit_value}",
+                "not_le": "El campo {field} debe ser menor o igual que {limit_value}"
+            },
+            "str": {
+                "regex": "El campo {field} no tiene un formato válido",
+                "alphanumeric": "El campo {field} debe contener solo letras y números",
+                "alpha": "El campo {field} debe contener solo letras",
+                "numeric": "El campo {field} debe contener solo números",
+                "unique": "El campo {field} debe ser único"
+            }
+        }
+    },
+    "attributes": {
+        "email": "correo electrónico",
+        "password": "contraseña",
+        "username": "nombre de usuario",
+        "first_name": "nombre",
+        "last_name": "apellido",
+        "phone": "teléfono",
+        "address": "dirección",
+        "city": "ciudad",
+        "country": "país",
+        "postal_code": "código postal",
+        "role": "rol",
+        "status": "estado",
+        "token": "token",
+        "name": "nombre",
+        "surname": "apellido",
+        "lang": "idioma",
+        "new_password": "nueva contraseña",
+        "ids": "ids",
+        "legal_name": "nombre legal",
+        "trade_name": "nombre comercial",
+        "cif": "cif",
+        "country_id": "país",
+        "province": "provincia",
+        "web": "web"
+    },
+    "users": {
+        "not_found": "Usuario no encontrado"
+    },
+    "roles": {
+        "not_found": "Rol no encontrado",
+        "created": "Rol creado correctamente",
+        "updated": "Rol actualizado correctamente",
+        "deleted": "Rol eliminado correctamente"
+    },
+    "companies": {
+        "not_found": "Empresa no encontrada",
+        "created": "Empresa creada correctamente",
+        "updated": "Empresa actualizada correctamente",
+        "deleted": "Empresa eliminada correctamente"
+    }
+}

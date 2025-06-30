@@ -1,0 +1,408 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "auth.invalid_credentials"
+msgstr "Invalid credentials"
+
+msgid "auth.unauthenticated"
+msgstr "Unauthenticated"
+
+msgid "auth.password_reset_email_sent"
+msgstr "A password reset email has been sent"
+
+msgid "auth.password_reset_subject"
+msgstr "Reset Password"
+
+msgid "auth.password_reset_email_body_greeting"
+msgstr "Hello"
+
+msgid "auth.password_reset_email_body_message"
+msgstr ""
+"You are receiving this email because you (or someone else) have requested a "
+"password reset for your account."
+
+msgid "auth.password_reset_email_body_action"
+msgstr "This password reset link will expire in 15 minutes."
+
+msgid "auth.password_reset_email_body_link"
+msgstr "Click here to reset your password: "
+
+msgid "auth.password_reset_email_body_farewell"
+msgstr "Regards, the team of"
+
+msgid "auth.password_reset_success"
+msgstr "Password reset successfully"
+
+msgid "auth.user_not_found"
+msgstr "User not found"
+
+msgid "auth.email_already_registered"
+msgstr "The email is already registered"
+
+msgid "auth.password_updated"
+msgstr "Password updated successfully"
+
+msgid "auth.invalid_password"
+msgstr "Invalid password"
+
+msgid "auth.profile_updated"
+msgstr "Profile updated successfully"
+
+msgid "auth.password_reset_email_body_link_text"
+msgstr "Change Password"
+
+msgid "common.data_processing"
+msgstr "Data is being processed"
+
+msgid "common.email_data_processing"
+msgstr "Data is being processed. You will receive an email when it is ready."
+
+msgid "common.data_processiong_message"
+msgstr "Completed {completed}/{total}"
+
+msgid "common.export_mail_subject"
+msgstr "Data export"
+
+msgid "common.export_mail_body_greeting"
+msgstr "Hello"
+
+msgid "common.export_mail_body_message"
+msgstr "The data has been exported successfully"
+
+msgid "common.export_mail_body_action"
+msgstr "We have attached the exported data for your review"
+
+msgid "common.export_mail_body_farewell"
+msgstr "Regards, the team of"
+
+msgid "common.errors_mail_subject"
+msgstr "Error importing data"
+
+msgid "common.errors_mail_body_greeting"
+msgstr "Hello"
+
+msgid "common.errors_mail_body_message"
+msgstr "Errors have been found while importing the data"
+
+msgid "common.errors_mail_body_action"
+msgstr "We have attached the file with the errors"
+
+msgid "common.errors_mail_body_farewell"
+msgstr "Regards, the team of"
+
+msgid "common.error_importing_data"
+msgstr "Error importing data"
+
+msgid "errors.internal_server_error"
+msgstr "Internal server error"
+
+msgid "errors.not_found"
+msgstr "Record not found"
+
+msgid "errors.unauthorized"
+msgstr "Unauthorized"
+
+msgid "errors.forbidden"
+msgstr "Access denied"
+
+msgid "errors.bad_request"
+msgstr "Bad request"
+
+msgid "errors.invalid_float_check_precision"
+msgstr ""
+"exactly one of precision_digits and precision_rounding must be specified"
+
+msgid "errors.precision_rounding_must_be_positive"
+msgstr "precision_rounding must be positive, got {precision_rounding}"
+
+msgid "errors.email_not_sent"
+msgstr "Email not sent"
+
+msgid "errors.unsupported_file_type"
+msgstr "Unsupported file type"
+
+msgid "errors.file_not_found"
+msgstr "File {file} not found"
+
+msgid "errors.file_processing_error"
+msgstr "Error processing file: {error}"
+
+msgid "errors.invalid_file"
+msgstr "The file {file} is not valid"
+
+msgid "errors.file_too_large"
+msgstr "The file {file} is too large"
+
+msgid "errors.file_too_large_message"
+msgstr "The file {file} cannot be larger than {max_size_mb} MB"
+
+msgid "errors.missing_company_id_header"
+msgstr "The company is required"
+
+msgid "date_formatter.months.January"
+msgstr "january"
+
+msgid "date_formatter.months.February"
+msgstr "february"
+
+msgid "date_formatter.months.March"
+msgstr "march"
+
+msgid "date_formatter.months.April"
+msgstr "april"
+
+msgid "date_formatter.months.May"
+msgstr "may"
+
+msgid "date_formatter.months.June"
+msgstr "june"
+
+msgid "date_formatter.months.July"
+msgstr "july"
+
+msgid "date_formatter.months.August"
+msgstr "august"
+
+msgid "date_formatter.months.September"
+msgstr "september"
+
+msgid "date_formatter.months.October"
+msgstr "october"
+
+msgid "date_formatter.months.November"
+msgstr "november"
+
+msgid "date_formatter.months.December"
+msgstr "december"
+
+msgid "date_formatter.months.short.Jan"
+msgstr "Jan"
+
+msgid "date_formatter.months.short.Feb"
+msgstr "Feb"
+
+msgid "date_formatter.months.short.Mar"
+msgstr "Mar"
+
+msgid "date_formatter.months.short.Apr"
+msgstr "Apr"
+
+msgid "date_formatter.months.short.May"
+msgstr "May"
+
+msgid "date_formatter.months.short.Jun"
+msgstr "Jun"
+
+msgid "date_formatter.months.short.Jul"
+msgstr "Jul"
+
+msgid "date_formatter.months.short.Aug"
+msgstr "Aug"
+
+msgid "date_formatter.months.short.Sep"
+msgstr "Sep"
+
+msgid "date_formatter.months.short.Oct"
+msgstr "Oct"
+
+msgid "date_formatter.months.short.Nov"
+msgstr "Nov"
+
+msgid "date_formatter.months.short.Dec"
+msgstr "Dec"
+
+msgid "validation.required_field"
+msgstr "The {field} field is required"
+
+msgid "validation.unique"
+msgstr "The {field} already exists"
+
+msgid "validation.invalid_email"
+msgstr "The email is not valid"
+
+msgid "validation.invalid_username"
+msgstr "The username {username} is not valid"
+
+msgid "validation.password_too_short"
+msgstr "Password must be at least {min_length} characters long"
+
+msgid "validation.password_too_long"
+msgstr "Password cannot be longer than {max_length} characters"
+
+msgid "validation.invalid_password_format"
+msgstr ""
+"Password must contain at least one uppercase letter, one lowercase letter, "
+"and one number"
+
+msgid "validation.field_min_length"
+msgstr "The {field} must be at least {min_length} characters long"
+
+msgid "validation.field_max_length"
+msgstr "The {field} cannot be longer than {max_length} characters"
+
+msgid "validation.field_must_be_numeric"
+msgstr "The {field} must be numeric"
+
+msgid "validation.field_must_be_alpha"
+msgstr "The {field} must contain only letters"
+
+msgid "validation.field_must_be_alphanumeric"
+msgstr "The {field} must contain only letters and numbers"
+
+msgid "validation.missing"
+msgstr "The {field} field is required"
+
+msgid "validation.field_must_be_valid"
+msgstr "The {field} field is not valid"
+
+msgid "validation.value_error.email"
+msgstr "The email is not valid"
+
+msgid "validation.value_error.any_str.min_length"
+msgstr "The {field} must be at least {limit_value} characters long"
+
+msgid "validation.value_error.any_str.max_length"
+msgstr "The {field} cannot be longer than {limit_value} characters"
+
+msgid "validation.value_error.number.not_gt"
+msgstr "The {field} must be greater than {limit_value}"
+
+msgid "validation.value_error.number.not_lt"
+msgstr "The {field} must be less than {limit_value}"
+
+msgid "validation.value_error.number.not_ge"
+msgstr "The {field} must be greater than or equal to {limit_value}"
+
+msgid "validation.value_error.number.not_le"
+msgstr "The {field} must be less than or equal to {limit_value}"
+
+msgid "validation.value_error.str.regex"
+msgstr "The {field} format is not valid"
+
+msgid "validation.value_error.str.alphanumeric"
+msgstr "The {field} must contain only letters and numbers"
+
+msgid "validation.value_error.str.alpha"
+msgstr "The {field} must contain only letters"
+
+msgid "validation.value_error.str.numeric"
+msgstr "The {field} must contain only numbers"
+
+msgid "validation.value_error.str.unique"
+msgstr "The {field} must be unique"
+
+msgid "attributes.email"
+msgstr "email"
+
+msgid "attributes.password"
+msgstr "password"
+
+msgid "attributes.username"
+msgstr "username"
+
+msgid "attributes.first_name"
+msgstr "first name"
+
+msgid "attributes.last_name"
+msgstr "last name"
+
+msgid "attributes.phone"
+msgstr "phone"
+
+msgid "attributes.address"
+msgstr "address"
+
+msgid "attributes.city"
+msgstr "city"
+
+msgid "attributes.country"
+msgstr "country"
+
+msgid "attributes.postal_code"
+msgstr "postal code"
+
+msgid "attributes.role"
+msgstr "role"
+
+msgid "attributes.status"
+msgstr "status"
+
+msgid "attributes.name"
+msgstr "name"
+
+msgid "attributes.surname"
+msgstr "surname"
+
+msgid "attributes.lang"
+msgstr "language"
+
+msgid "attributes.new_password"
+msgstr "new password"
+
+msgid "attributes.limit"
+msgstr "limit"
+
+msgid "attributes.page"
+msgstr "page"
+
+msgid "attributes.search"
+msgstr "search"
+
+msgid "attributes.ids"
+msgstr "ids"
+
+msgid "attributes.legal_name"
+msgstr "legal name"
+
+msgid "attributes.trade_name"
+msgstr "trade name"
+
+msgid "attributes.cif"
+msgstr "cif"
+
+msgid "attributes.country_id"
+msgstr "country"
+
+msgid "attributes.province"
+msgstr "province"
+
+msgid "attributes.web"
+msgstr "web"
+
+msgid "users.not_found"
+msgstr "User not found"
+
+msgid "roles.not_found"
+msgstr "Role not found"
+
+msgid "roles.created"
+msgstr "Role created successfully"
+
+msgid "roles.updated"
+msgstr "Role updated successfully"
+
+msgid "roles.deleted"
+msgstr "Role deleted successfully"
+
+msgid "companies.not_found"
+msgstr "Company not found"
+
+msgid "companies.created"
+msgstr "Company created successfully"
+
+msgid "companies.updated"
+msgstr "Company updated successfully"
+
+msgid "companies.deleted"
+msgstr "Company deleted successfully"
