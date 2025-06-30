@@ -6,7 +6,7 @@ export interface Input{
     label?: string
     modelValue?: string
     required?: boolean
-    type?: 'text'|'email'|'password'
+    type?: 'checkbox'|'text'|'email'|'password'
 }
 export const propsInput = withDefaults(defineProps<Input>(),{
     placeholder: '',

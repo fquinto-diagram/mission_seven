@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import routerAuth from '@/modules/auth/router/auth.login'
+import routerRoles from '@/modules/roles/routes/roles.routes'
 import { isAuthenticatedGuard } from '@/modules/auth/guards/auth.guard'
 
 const routes =[
@@ -19,24 +20,7 @@ const routes =[
                 name: 'profile-form',
                 component: ()=>import('@/modules/pages/Profiles.vue')
             },
-            {
-                path: 'roles',
-                name: 'roles',
-                children: [
-                    {
-                        path: 'form',
-                        name: 'roles-form',
-                        component: ()=>import('@/modules/pages/RolesFrom.vue')
-                    },
-                    {
-                        path: 'list',
-                        name: 'roles-list',
-                        component: ()=>import('@/modules/pages/RolesList.vue')
-                    }
-                ]
-
-            }
-
+            ...routerRoles
         ]
     },
     ... routerAuth

@@ -1,23 +1,38 @@
-import { getRoles } from '@/modules/roles/helpers/getRoles';
-import type { Role } from '@/modules/roles/interfaces/role.interface';
-import { onMounted, ref } from 'vue';
-import { useCookies } from 'vue3-cookies'
+import { getAllRoles } from '@/modules/roles/helpers/getRoles';
+import type { Rol } from '@/modules/roles/interfaces/role.interface';
+import { ref, watch } from 'vue';
 
 export function useListRoles() {
-    const { cookies }= useCookies()
-    const token = cookies.get('token')
-    const roles = ref<Role[]>([])
 
-    onMounted(async ()=>{
-        if (token){
-            try{
-                const response = await getRoles()
-                console.log(response);
-                roles.value = response?.data ?? []
-            }catch(error){
-                alert(`Hay un error\n ${error}`)
-            }
+    const roles = ref<Rol[]>([])
+    const page = ref(1)
+    const totalPages = ref(1)
+
+    async function fetchRoles() {
+        const data = await getAllRoles(page.value)
+        roles.value = data?.data || []
+        totalPages.value = data?.total_pages || 1
+    }
+
+    function nextPage(){
+        page.value ++
+        fetchRoles()
+        if (page.value > totalPages.value){
+            page.value = totalPages.value
         }
-    });
-    return { roles }; 
+    }
+    
+    function prevPage(){
+        if (page.value > 1){
+            page.value -- 
+            fetchRoles()
+        }
+    }
+
+    fetchRoles()
+
+    watch(page, fetchRoles)
+
+    return { roles, page, totalPages, fetchRoles, nextPage, prevPage }; 
 }
+

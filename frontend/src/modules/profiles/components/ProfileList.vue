@@ -8,7 +8,7 @@
       <MyButton @click="handelEdit" text="Editar Perfil" class="mt-4 rounded-md p-2 bg-amber-300 text-white" />
     </div>
 
-    <form v-else>
+    <form v-else class="shadow-2xl p-2">
       <div class="flex flex-wrap gap-4 justify-between">
         <div class="flex flex-col w-full sm:w-[22%]">
           <label for="nombre" class="text-sm font-medium text-gray-700">Nombre</label>
@@ -43,10 +43,10 @@ import { ref, reactive, onMounted } from 'vue';
 import { useCookies } from 'vue3-cookies';
 import MyInput from '@/modules/common/components/MyInput.vue';
 import MyButton from '@/modules/common/components/MyButton.vue';
-import { getUser } from '@/modules/auth/helpers/getUser';
-import { putUser } from '@/modules/auth/helpers/putUser';
+import { getUser } from '@/modules/profiles/helpers/getUser';
+import { putUser } from '@/modules/profiles/helpers/putUser';
 import type { User } from '@/modules/auth/interface/user.interface';
-import { languages } from '@/modules/Profiles/interfaces/lang.interface';
+import { languages } from '@/modules/profiles/interfaces/lang.interface';
 
 const isLoaded = ref(false)
 const edit = ref(false)
@@ -66,9 +66,8 @@ function handelEdit() {
 
 async function handleSubmit() {
   if (!token) return;
-
   try {
-    await putUser(token, user);
+    await putUser(user);
     alert("Usuario actualizado correctamente");
     edit.value = false;
   } catch (error) {
@@ -79,7 +78,7 @@ async function handleSubmit() {
 onMounted(async () => {
   if (token) {
     try {
-      const response = await getUser(token)
+      const response = await getUser()
       if (response && 'user' in response) {
         Object.assign(user, response.user)
         isLoaded.value = true

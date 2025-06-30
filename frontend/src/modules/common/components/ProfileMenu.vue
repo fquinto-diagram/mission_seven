@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { getUser } from '@/modules/auth/helpers/getUser';
+import { getUser } from '@/modules/profiles/helpers/getUser';
 import { useAuthStore } from '@/modules/auth/store/storeCredentials';
 import { useRouter } from 'vue-router';
 import { onMounted, ref, reactive } from 'vue';
@@ -42,7 +42,7 @@ const user = reactive<User>({
 onMounted(async () => {
   if (token) {
     try {
-      const response = await getUser(token)
+      const response = await getUser()
 
       if (response && 'user' in response) {
         Object.assign(user, response.user)
